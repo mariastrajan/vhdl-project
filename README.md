@@ -1,5 +1,5 @@
-# serial communication system
-Project developed during university courses.
+# Serial Communication System
+Project developed during University courses.
 
 ## General Description of the Functionality
 
