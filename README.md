@@ -6,12 +6,15 @@ Project developed during university courses.
 The project implements a serial communication system using VHDL. 
 The system transmits information in the form of data packets.
 Each packet contains:
--a start segment (with a start bit and a start code).
--a data segment (formed by 4 words encoded in BCD).
+-a start segment (with a start bit and a start code)
+
+-a data segment (formed by 4 words encoded in BCD)
+
 -a checksum calculated using the XOR operation.
   
 The system includes two logical blocks: 
--a generator, which emits the packets.
+-a generator, which emits the packets
+
 -a detector, which validates the received content.
 
 ## System Architecture
@@ -19,11 +22,17 @@ The system includes two logical blocks:
 The system is composed of several modules:
 
 -ROM: used to store the components of the data packet.
+
 -UNITATE_CONTROL: finite state machine(FSM) controlling the system.
+
 -UNITATE_EXECUTIE: performs operations on the received data.
+
 -date_serial: extracts packet bits in the correct order.
+
 -nr_ss, nr_sm, nr_sc: counters for the start, data and checksum segments.
+
 -MPG: filters the push-button signal.
+
 -final.vhd: top-level module integrating all components.
 
 ## Operating Principle
